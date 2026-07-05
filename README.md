@@ -6,7 +6,7 @@ Anonymized review-stage repository for the manuscript:
 
 ## Overview
 
-This repository contains Jupyter notebooks with cell outputs retained for reviewing and reproducing the manuscript analyses. The study evaluates a rubric-conditioned LLM annotation protocol for a post hoc-harmonized seven-class affective-state text corpus. The analyses examine label concordance, entropy and score-dispersion diagnostics, affective co-occurrence, hard-label and soft-label supervision, multi-task aspect modeling, human-validation audits, and multi-LLM robustness checks.
+This repository contains a sanitized source copy of the LLM annotation notebook and Jupyter analysis notebooks with cell outputs retained for reviewing and reproducing the manuscript analyses. The study evaluates a rubric-conditioned LLM annotation protocol for a post hoc-harmonized seven-class affective-state text corpus. The analyses examine label concordance, entropy and score-dispersion diagnostics, affective co-occurrence, hard-label and soft-label supervision, multi-task aspect modeling, human-validation audits, and multi-LLM robustness checks.
 
 The repository is prepared for anonymous peer review. Data files, generated outputs, model checkpoints, figures, API keys, local paths, and private working notes are not included. Review-stage data materials are provided separately through OSF:
 
@@ -20,6 +20,7 @@ https://osf.io/yq9tz/overview?view_only=c3805375590e4873b907671df16fc4b5
 │   └── README.md
 │
 ├── 1. Code for LLM Annotation/
+│   ├── MentalHealth_4omini_Labeling.ipynb
 │   └── README.md
 │
 ├── 2. Code for Label Comparison and Entropy/
@@ -64,7 +65,7 @@ The notebooks are designed to be reviewed or run in the following order:
 | Step | Folder | Purpose |
 |---|---|---|
 | 0 | `0. Dataset/` | OSF data package location and data-layout notes |
-| 1 | `1. Code for LLM Annotation/` | Review-stage note on the omitted API annotation notebook |
+| 1 | `1. Code for LLM Annotation/` | Sanitized annotation notebook with full prompt, output schema, model settings, and post-processing logic |
 | 2 | `2. Code for Label Comparison and Entropy/` | Released-label versus LLM-label concordance, score-vector entropy, and co-occurrence diagnostics |
 | 3 | `3. Hard Label Modeling/` | Supervised models trained under released-label, LLM-label, and agreement-subset panels |
 | 4 | `4. Soft Label Modeling/` | Soft-label transformer training using LLM score-vector targets |
@@ -99,8 +100,8 @@ GPU runtime is recommended for transformer modeling notebooks.
 4. Run each notebook after confirming the input paths.
 5. Generated files should be written to local output folders and are excluded from version control.
 
-The API-based LLM annotation notebook is not included in this review-stage code repository. The pre-generated LLM annotation outputs needed for downstream analyses are provided in the OSF data package. This avoids exposing private credentials and prevents accidental API re-querying during review.
+The API-based LLM annotation notebook is included as a sanitized source-protocol copy. Credential-check lines, private credentials, author-identifying metadata, and cell outputs were removed from that notebook. The pre-generated LLM annotation outputs needed for downstream analyses are provided in the OSF data package, so reviewers do not need to re-query the API to reproduce the manuscript analyses.
 
 ## Review-Stage Note
 
-Shared notebooks retain their cell outputs for review, but standalone generated files are not versioned. Author-identifying notebook metadata and local machine paths have been removed from the shared copies.
+Shared analysis notebooks retain their cell outputs for review, but standalone generated files are not versioned. The annotation notebook is shared as source protocol with outputs cleared. Author-identifying notebook metadata and local machine paths have been removed from the shared copies.

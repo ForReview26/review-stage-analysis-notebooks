@@ -1,7 +1,17 @@
 # Code for LLM Annotation
 
-The API-based LLM annotation notebook is not included in this anonymous review-stage repository.
+This folder contains a sanitized review copy of the original LLM annotation notebook:
 
-The manuscript uses a fixed rubric-conditioned LLM protocol to generate hard labels, score vectors, and aspect ratings. The pre-generated annotation outputs needed for downstream analyses are provided through the OSF review-stage data package.
+- `MentalHealth_4omini_Labeling.ipynb`
 
-This omission prevents accidental API re-querying during review and avoids exposing private credentials. The prompt, output schema, model identifier, and post-processing rules are documented in the manuscript and supplementary/reproducibility materials.
+The notebook documents the rubric-conditioned annotation protocol used to generate the hard labels, score vectors, and aspect ratings used in the manuscript. The complete prompt and JSON output schema are in the cell defining `BATCH_ANNOTATION_INSTRUCTIONS_V2`.
+
+## Review-Safe Sanitization
+
+The shared notebook excludes private credentials and data files. The API credential-check lines were removed, Colab/user metadata were stripped, and cell outputs were cleared. The review repository does not store raw or derived CSV data, generated output files, API keys, or model checkpoints.
+
+## Protocol Summary
+
+The annotation protocol uses `gpt-4o-mini` with `temperature=0`. The runtime configuration in the notebook specifies batch size, concurrency, retry, and checkpoint settings. The parser records the returned label, score vector, aspect flags, model version, system fingerprint, timestamp, and raw JSON in the intermediate output; the final cleaned annotation file removes `u_raw_json`.
+
+The pre-generated annotation outputs needed for downstream analyses are provided through the OSF review-stage data package. Reviewers can inspect the full prompt/schema here without re-querying the API.
