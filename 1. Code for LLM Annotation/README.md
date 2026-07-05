@@ -8,7 +8,7 @@ The notebook documents the rubric-conditioned annotation protocol used to genera
 
 ## Review-Safe Sanitization
 
-The shared notebook excludes private credentials and data files. The API credential-check lines were removed, Colab/user metadata were stripped, and cell outputs were cleared. The review repository does not store raw or derived CSV data, generated output files, API keys, or model checkpoints.
+The shared notebook excludes private credentials and data files. The API credential-check lines were removed and Colab/user metadata were stripped. Cell outputs are retained for review. The review repository does not store raw or derived CSV data, generated output files, API keys, or model checkpoints.
 
 ## Protocol Summary
 

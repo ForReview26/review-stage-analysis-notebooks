@@ -100,8 +100,8 @@ GPU runtime is recommended for transformer modeling notebooks.
 4. Run each notebook after confirming the input paths.
 5. Generated files should be written to local output folders and are excluded from version control.
 
-The API-based LLM annotation notebook is included as a sanitized source-protocol copy. Credential-check lines, private credentials, author-identifying metadata, and cell outputs were removed from that notebook. The pre-generated LLM annotation outputs needed for downstream analyses are provided in the OSF data package, so reviewers do not need to re-query the API to reproduce the manuscript analyses.
+The API-based LLM annotation notebook is included as a sanitized source-protocol copy with cell outputs retained. Credential-check lines, private credentials, and author-identifying metadata were removed from that notebook. The pre-generated LLM annotation outputs needed for downstream analyses are provided in the OSF data package, so reviewers do not need to re-query the API to reproduce the manuscript analyses.
 
 ## Review-Stage Note
 
-Shared analysis notebooks retain their cell outputs for review, but standalone generated files are not versioned. The annotation notebook is shared as source protocol with outputs cleared. Author-identifying notebook metadata and local machine paths have been removed from the shared copies.
+Shared notebooks retain their cell outputs for review, but standalone generated files are not versioned. Author-identifying notebook metadata and local machine paths have been removed from the shared copies.
