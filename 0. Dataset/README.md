@@ -1,6 +1,8 @@
 # Dataset
 
-Review-stage data materials are shared separately through OSF.
+Review-stage data materials are shared separately through OSF:
+
+https://osf.io/yq9tz/overview?view_only=c3805375590e4873b907671df16fc4b5
 
 Place the downloaded OSF data package in this folder, or update the path configuration cells in each notebook to point to the downloaded data location.
 

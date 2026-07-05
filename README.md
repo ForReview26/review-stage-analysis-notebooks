@@ -8,7 +8,9 @@ Anonymized review-stage repository for the manuscript:
 
 This repository contains output-cleared Jupyter notebooks for reproducing the manuscript analyses. The study evaluates a rubric-conditioned LLM annotation protocol for a post hoc-harmonized seven-class affective-state text corpus. The analyses examine label concordance, entropy and score-dispersion diagnostics, affective co-occurrence, hard-label and soft-label supervision, multi-task aspect modeling, human-validation audits, and multi-LLM robustness checks.
 
-The repository is prepared for anonymous peer review. Data files, generated outputs, model checkpoints, figures, API keys, local paths, and private working notes are not included. Review-stage data materials are provided separately through OSF.
+The repository is prepared for anonymous peer review. Data files, generated outputs, model checkpoints, figures, API keys, local paths, and private working notes are not included. Review-stage data materials are provided separately through OSF:
+
+https://osf.io/yq9tz/overview?view_only=c3805375590e4873b907671df16fc4b5
 
 ## Repository Structure
 
@@ -42,7 +44,11 @@ The repository is prepared for anonymous peer review. Data files, generated outp
 
 ## Dataset
 
-The analysis-ready data package is shared separately through OSF for peer review. Place the downloaded files under `0. Dataset/` or update the path configuration cells in each notebook to point to the downloaded data location.
+The analysis-ready data package is shared separately through OSF for peer review:
+
+https://osf.io/yq9tz/overview?view_only=c3805375590e4873b907671df16fc4b5
+
+Place the downloaded files under `0. Dataset/` or update the path configuration cells in each notebook to point to the downloaded data location.
 
 The GitHub repository intentionally does not store:
 
@@ -87,7 +93,7 @@ GPU runtime is recommended for transformer modeling notebooks.
 
 ## Reproducing Results
 
-1. Download the OSF review-stage data package.
+1. Download the OSF review-stage data package: https://osf.io/yq9tz/overview?view_only=c3805375590e4873b907671df16fc4b5
 2. Place the data under `0. Dataset/` or update notebook path configuration cells.
 3. Open notebooks in the order listed in the analysis pipeline.
 4. Run each notebook after confirming the input paths.
