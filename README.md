@@ -6,7 +6,7 @@ Anonymized review-stage repository for the manuscript:
 
 ## Overview
 
-This repository contains output-cleared Jupyter notebooks for reproducing the manuscript analyses. The study evaluates a rubric-conditioned LLM annotation protocol for a post hoc-harmonized seven-class affective-state text corpus. The analyses examine label concordance, entropy and score-dispersion diagnostics, affective co-occurrence, hard-label and soft-label supervision, multi-task aspect modeling, human-validation audits, and multi-LLM robustness checks.
+This repository contains Jupyter notebooks with cell outputs retained for reviewing and reproducing the manuscript analyses. The study evaluates a rubric-conditioned LLM annotation protocol for a post hoc-harmonized seven-class affective-state text corpus. The analyses examine label concordance, entropy and score-dispersion diagnostics, affective co-occurrence, hard-label and soft-label supervision, multi-task aspect modeling, human-validation audits, and multi-LLM robustness checks.
 
 The repository is prepared for anonymous peer review. Data files, generated outputs, model checkpoints, figures, API keys, local paths, and private working notes are not included. Review-stage data materials are provided separately through OSF:
 
@@ -103,4 +103,4 @@ The API-based LLM annotation notebook is not included in this review-stage code 
 
 ## Review-Stage Note
 
-All shared notebooks have been cleared of cell outputs and execution counts. Author-identifying notebook metadata and local machine paths have been removed from the shared copies.
+Shared notebooks retain their cell outputs for review, but standalone generated files are not versioned. Author-identifying notebook metadata and local machine paths have been removed from the shared copies.
